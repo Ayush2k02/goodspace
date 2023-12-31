@@ -5,4 +5,7 @@ body{
 }
 .navbar{
     backdrop-filter: blur(8px);
+    height: 80px;
+    width: 100%;
+    position: absolute;
 }

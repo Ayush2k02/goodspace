@@ -1,6 +1,14 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 body{
     margin: 0px;
 }
 .home{
     height: 100vh;
+    background-image: url('../../images/background.jpg');
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: 125%;
 }

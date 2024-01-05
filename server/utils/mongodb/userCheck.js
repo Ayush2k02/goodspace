@@ -1,7 +1,7 @@
-const { User } = require('../../db');
+const User = require("../../db");
 
 const isUserDetailsValid = async (userInfo) => {
-  const resp = await User.findOne(userInfo);
+  const resp = await User.UserModel.findOne(userInfo);
   return resp !== null;
 };
 

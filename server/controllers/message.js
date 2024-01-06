@@ -1,4 +1,4 @@
-const db = require ("../db/index.js");
+const db = require("../db/index.js");
 
 const sendMessage = async (req, res) => {
   const { message, chatId } = req.body;
@@ -21,12 +21,16 @@ const sendMessage = async (req, res) => {
 
     m = await m.populate("sender", "name");
     m = await m.populate("chat");
-    m = await User.populate(m, {
+    m = await db.UserModel.populate(m, {
       path: "chat.users",
       select: "name email _id",
     });
 
-    await db.ChatModel.findByIdAndUpdate(chatId, { latestMessage: m }, { new: true });
+    await db.ChatModel.findByIdAndUpdate(
+      chatId,
+      { latestMessage: m },
+      { new: true }
+    );
 
     res.status(200).json(m);
   } catch (error) {

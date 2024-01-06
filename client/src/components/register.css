@@ -1,0 +1,92 @@
+/* .Wrapper {
+  flex: 1;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 300px;
+  padding: 2rem 4rem;
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  padding-bottom: 100px;
+} */
+
+.register-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background {
+  background-image: url("../images/background.jpg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-left: 5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.left .image {
+  height: 150px;
+  width: 90px;
+  background: url("../images/goodspace.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.right {
+  flex: 1;
+}
+
+.right .wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.right .wrapper .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem;
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  color: white;
+}
+
+.form > label {
+  font-size: 1rem;
+}
+
+.form > input {
+  width: 100%;
+  margin: 0px;
+  outline: 0;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #297bca;
+}
+
+.navbar{
+    position: absolute;
+    width: 100vw;
+    height: 60px;
+    backdrop-filter: blur(1rem);
+}

@@ -1,0 +1,13 @@
+.Wrapper{
+    flex:1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 300px;
+    padding: 2rem 4rem;
+    backdrop-filter: blur(2rem);
+    border-radius: 2rem;
+    padding-bottom: 100px;
+}
